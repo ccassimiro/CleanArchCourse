@@ -27,10 +27,6 @@ namespace CleanArchMvc.Application.Categories.Handlers
         public async Task<CategoryDTO> Handle(GetCategoryByIdQuery request, CancellationToken cancellationToken)
         {
             var category = await _categoryRepository.GetByIdAsync(request.Id);
-
-            if (category == null)
-                throw new ApplicationException($"Category with Id {request.Id} not found.");
-
             return _mapper.Map<CategoryDTO>(category);
         }
     }

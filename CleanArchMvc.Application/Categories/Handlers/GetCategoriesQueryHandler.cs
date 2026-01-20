@@ -26,10 +26,6 @@ namespace CleanArchMvc.Application.Categories.Handlers
         public async Task<IEnumerable<CategoryDTO>> Handle(GetCategoriesQuery request, CancellationToken cancellationToken)
         {
             var categories = await _categoryRepository.GetCategoriesAsync();
-
-            if(categories == null)
-                throw new ApplicationException("No products found.");
-
             return _mapper.Map<IEnumerable<CategoryDTO>>(categories); ;
         }
     }

@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Land\\Documents\\repos\\github-repos\\CleanArchCourse\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4E62E493-52E1-4D0D-BE1D-5BEE29D8269C}|CleanArchMvc.WebUI\\CleanArchMvc.WebUI.csproj|c:\\users\\land\\documents\\repos\\github-repos\\cleanarchcourse\\cleanarchmvc.webui\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E62E493-52E1-4D0D-BE1D-5BEE29D8269C}|CleanArchMvc.WebUI\\CleanArchMvc.WebUI.csproj|solutionrelative:cleanarchmvc.webui\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Land\\Documents\\repos\\github-repos\\CleanArchCourse\\CleanArchMvc.WebUI\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "CleanArchMvc.WebUI\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\Land\\Documents\\repos\\github-repos\\CleanArchCourse\\CleanArchMvc.WebUI\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "CleanArchMvc.WebUI\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-20T00:40:41.467Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

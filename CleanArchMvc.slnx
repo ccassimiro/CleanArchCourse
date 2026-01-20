@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="CleanArchMvc.Application/CleanArchMvc.Application.csproj" Id="7cb18dd3-b02a-47fa-a035-6f4dfd7f5598" />
+  <Project Path="CleanArchMvc.Domain.Tests/CleanArchMvc.Domain.Tests.csproj" Id="f9340e54-0c2b-4964-a69d-64c13898f712" />
+  <Project Path="CleanArchMvc.Domain/CleanArchMvc.Domain.csproj" Id="44782219-8635-41eb-93bd-4a45609cb1de" />
+  <Project Path="CleanArchMvc.Infra.Data/CleanArchMvc.Infra.Data.csproj" Id="2fb101fd-ce60-46fc-be59-6a9b3e65c222" />
+  <Project Path="CleanArchMvc.Infra.IoC/CleanArchMvc.Infra.IoC.csproj" Id="5a84729b-643d-4c8d-a993-6ef7ba1065a9" />
+  <Project Path="CleanArchMvc.WebUI/CleanArchMvc.WebUI.csproj" Id="4e62e493-52e1-4d0d-be1d-5bee29d8269c" />
+</Solution>

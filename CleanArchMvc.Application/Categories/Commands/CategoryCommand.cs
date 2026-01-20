@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CleanArchMvc.Domain.Entities;
+﻿using CleanArchMvc.Application.DTOs;
 using MediatR;
 
 namespace CleanArchMvc.Application.Categories.Commands
 {
-    public abstract class CategoryCommand : IRequest<Category>
+    public abstract class CategoryCommand : IRequest<CategoryDTO>
     {
         public string Name { get; set; }
     }

@@ -1,25 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
+﻿using AutoMapper;
+using CleanArchMvc.Application.DTOs;
 using CleanArchMvc.Application.Products.Commands;
-using CleanArchMvc.Domain.Entities;
 using CleanArchMvc.Domain.Interfaces;
 using MediatR;
+using System;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace CleanArchMvc.Application.Products.Handlers
 {
-    public class ProductUpdateCommandHandler : IRequestHandler<ProductUpdateCommand, Product>
+    public class ProductUpdateCommandHandler : IRequestHandler<ProductUpdateCommand, ProductDTO>
     {
         private readonly IProductRepository _productRepository;
+        private readonly IMapper _mapper;
 
-        public ProductUpdateCommandHandler(IProductRepository productRepository)
+        public ProductUpdateCommandHandler(IProductRepository productRepository, IMapper mapper)
         {
             _productRepository = productRepository ?? throw new ArgumentNullException(nameof(productRepository));
+            _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
         }
-        public async Task<Product> Handle(ProductUpdateCommand request, CancellationToken cancellationToken)
+        public async Task<ProductDTO> Handle(ProductUpdateCommand request, CancellationToken cancellationToken)
         {
             var product = await _productRepository.GetByIdAsync(request.Id);
 
@@ -30,7 +30,9 @@ namespace CleanArchMvc.Application.Products.Handlers
 
             product.Update(request.Name, request.Description, request.Price, request.Stock, request.Image, request.CategoryId);
 
-            return await _productRepository.UpdateAsync(product);
+            await _productRepository.UpdateAsync(product);
+
+            return _mapper.Map<ProductDTO>(product);
         }
     }
 }

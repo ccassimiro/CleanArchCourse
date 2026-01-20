@@ -1,9 +1,9 @@
-﻿using CleanArchMvc.Domain.Entities;
+﻿using CleanArchMvc.Application.DTOs;
 using MediatR;
 
 namespace CleanArchMvc.Application.Products.Commands
 {
-    public abstract class ProductCommand : IRequest<Product>
+    public abstract class ProductCommand : IRequest<ProductDTO>
     {
         public string Name { get; protected set; }
         public string Description { get; protected set; }
